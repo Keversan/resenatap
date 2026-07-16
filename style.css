@@ -80,6 +80,7 @@ h1,h2,h3{font-weight:800;letter-spacing:-0.03em;color:var(--ink);}
   border:1px solid var(--gray-200);
 }
 .btn-ghost:hover{border-color:var(--gray-400); transform:translateY(-2px); box-shadow:var(--shadow-md);}
+.btn-wa svg{width:18px;height:18px;flex-shrink:0;}
 .btn-amber{
   background:var(--amber); color:var(--ink);
   box-shadow:0 12px 28px -10px rgba(251,191,36,.55);
