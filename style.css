@@ -4,6 +4,8 @@
   --blue-ink:#0B1220;
   --amber:#FBBF24;
   --amber-soft:#FEF3C7;
+  --wa-green:#25D366;
+  --wa-green-dark:#1EBE5A;
   --white:#FFFFFF;
   --gray-50:#F8FAFC;
   --gray-100:#F1F5F9;
@@ -19,7 +21,6 @@
   --shadow-sm:0 1px 2px rgba(15,23,42,.04), 0 1px 1px rgba(15,23,42,.03);
   --shadow-md:0 8px 24px -8px rgba(15,23,42,.10), 0 2px 6px rgba(15,23,42,.04);
   --shadow-lg:0 24px 60px -12px rgba(15,23,42,.18);
-  --shadow-blue:0 12px 32px -10px rgba(37,99,235,.35);
   --ease:cubic-bezier(.22,1,.36,1);
 }
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -70,11 +71,11 @@ h1,h2,h3{font-weight:800;letter-spacing:-0.03em;color:var(--ink);}
   transition:transform .35s var(--ease), box-shadow .35s var(--ease), background .25s;
   white-space:nowrap;
 }
-.btn-primary{
-  background:var(--blue); color:#fff;
-  box-shadow:var(--shadow-blue);
+.btn-wa{
+  background:var(--wa-green); color:#fff;
+  box-shadow:0 12px 28px -10px rgba(37,211,102,.5);
 }
-.btn-primary:hover{transform:translateY(-2px); box-shadow:0 18px 40px -10px rgba(37,99,235,.45); background:var(--blue-dark);}
+.btn-wa:hover{transform:translateY(-2px); box-shadow:0 18px 36px -10px rgba(37,211,102,.6); background:var(--wa-green-dark);}
 .btn-wa svg{width:18px;height:18px;flex-shrink:0;}
 
 .reveal{opacity:0; transform:translateY(28px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
@@ -325,14 +326,14 @@ footer{background:#0B1220;color:#fff;padding:70px 0 30px;}
 .wa-float{
   position:fixed;bottom:26px;right:26px;z-index:90;
   width:58px;height:58px;border-radius:50%;
-  background:#25D366;
+  background:var(--wa-green);
   display:flex;align-items:center;justify-content:center;
   box-shadow:0 14px 30px -8px rgba(37,211,102,.55);
   transition:transform .3s var(--ease);
 }
 .wa-float:hover{transform:scale(1.08);}
-.wa-float svg{width:28px;height:28px;color:#fff;}
-.wa-float .ring{position:absolute;inset:0;border-radius:50%;border:2px solid #25D366;animation:ripple2 2.2s var(--ease) infinite;}
+.wa-float svg{width:28px;height:28px;}
+.wa-float .ring{position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa-green);animation:ripple2 2.2s var(--ease) infinite;}
 @keyframes ripple2{0%{transform:scale(1);opacity:.7;}100%{transform:scale(1.6);opacity:0;}}
 
 /* ---------- responsive ---------- */
